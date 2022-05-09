@@ -6,7 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
    public TextMeshProUGUI TimerText;
-   public int secondsLeft = 60;
+   public int secondsLeft = 100;
    public bool takingAway = false;
    public TextMeshProUGUI TimesUp;
 
