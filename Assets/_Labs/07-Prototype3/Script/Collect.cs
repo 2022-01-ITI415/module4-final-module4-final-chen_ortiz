@@ -5,10 +5,14 @@ using UnityEngine;
 public class Collect : MonoBehaviour
 {
     public AudioSource Sound;
+
     void OnTriggerEnter(Collider other)
     {
-        Sound.Play();
-        CountScript.count += 1;
-        Destroy(gameObject);
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Sound.Play();
+            CountScript.count += 1;
+            Destroy(gameObject);
+        }
     }
 }
