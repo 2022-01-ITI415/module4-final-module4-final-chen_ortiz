@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class CountScript : MonoBehaviour
 {
-   public GameObject countText;
-   public static int theCount;
+    public TextMeshProUGUI CountText;
+    public static int count;
 
-
-   void Update()
-   {
-       countText.GetComponent<Text>().text = "COINS: " + theCount;
-   }
+    void Update()
+    {
+        CountText.text = "Coins: " + count;
+    }
 }
