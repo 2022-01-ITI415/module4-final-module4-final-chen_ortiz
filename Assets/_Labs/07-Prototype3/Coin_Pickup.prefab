@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5271802155733275590}
   - component: {fileID: 3666644008812853010}
   - component: {fileID: 2238870573973696555}
-  - component: {fileID: 132291457}
+  - component: {fileID: 7420863278936393095}
   m_Layer: 0
   m_Name: Coin_Pickup
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &132291457
+--- !u!114 &7420863278936393095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,9 +106,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7570455971455017568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfe6ae47efb144024b0d55bc32750835, type: 3}
+  m_Script: {fileID: 11500000, guid: 03a3d06cb975d4d09996d2e4bff325ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countText: {fileID: 7570455971455017568}
-  theCount: 0
+  CountText: {fileID: 0}
+  winTextObject: {fileID: 0}
   Sound: {fileID: 0}

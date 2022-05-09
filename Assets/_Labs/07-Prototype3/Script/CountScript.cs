@@ -6,14 +6,11 @@ using UnityEngine.UI;
 public class CountScript : MonoBehaviour
 {
    public GameObject countText;
-   public int theCount;
-   public AudioSource Sound;
+   public static int theCount;
 
-   void OnTriggerEnter(Collider other)
+
+   void Update()
    {
-       Sound.Play();
-       theCount += 1;
        countText.GetComponent<Text>().text = "COINS: " + theCount;
-       Destroy(gameObject);
    }
 }
